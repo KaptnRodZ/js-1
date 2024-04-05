@@ -1,2 +1,3 @@
-# js-1
-Course assignment
+# Rainy_Days
+
+WIP

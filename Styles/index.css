@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+body {
+  font-family: "Lora", serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  margin: auto;
+  max-width: 2100px;
+}
+
+header {
+  background-color: #a6e3e9;
+  padding: 0.5rem;
+}
+header img {
+  width: 130px;
+}
+header input {
+  height: 1.5rem;
+  margin: auto;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+#checkbox {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+  top: 20px;
+  right: 15px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+.menu-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+.hamburger-lines {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1.6rem;
+  right: 1rem;
+  display: none;
+}
+.hamburger-lines div {
+  height: 5px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: black;
+  margin: auto;
+}
+
+.nav-container #checkbox:checked ~ .menu-items {
+  display: flex;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+main div.gender {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+main div.gender a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+main div.gender h2 {
+  position: absolute;
+  top: 13rem;
+  color: #c1e6ec;
+  font-size: xx-large;
+  align-content: center;
+}
+
+main div.gender img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  align-items: center;
+}
+main div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  align-items: center;
+}
+
+@media (max-width: 750px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  .menu-items {
+    width: 80%;
+    flex-direction: column;
+    display: none;
+  }
+
+  header input {
+    display: none;
+  }
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .hamburger-lines {
+    display: flex;
+  }
+  main div img {
+    object-fit: cover;
+    width: 100%;
+  }
+  main div {
+    padding: 2px;
+  }
+}
+
+footer {
+  background-color: #c1e6ec;
+  color: #2a2a2a;
+}
+footer a {
+  color: #2a2a2a;
+}
+
+.social-media-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
