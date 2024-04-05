@@ -1,8 +1,13 @@
 @import url("/Styles/index.css");
 
+.spesific-h1 {
+  font-size: 3rem;
+}
 .jacket {
   text-align: center;
   margin: auto;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 button {
@@ -12,6 +17,12 @@ button {
   padding: 0.5rem;
 }
 @media (max-width: 750px) {
+  .spesific-description {
+  }
+  .spesific-h1 {
+    font-size: 1.5rem;
+  }
+
   button {
     margin-top: auto;
     .jacket {
