@@ -3,52 +3,37 @@
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: unset;
 }
-
-main h1 {
-  margin-left: 1rem;
-}
-table {
-  display: flex;
-  margin: 0.5rem;
-}
-
-table th {
-  text-decoration: underline;
-  width: 20rem;
-  text-align: center;
-}
-table td {
-  width: 20rem;
+h1 {
+  width: 100%;
   text-align: center;
 }
 
-.last-table-row {
-  text-decoration: underline;
+.item-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  width: 100%;
 }
 
-.checkout-button {
-  text-decoration: none;
-  color: black;
-  background-color: #a6e3e9;
-  padding: 0.5rem 2rem;
-  margin: auto;
-  border-radius: 2px;
-  border: 1px solid black;
-}
+.item-div img {
+  padding: 0;
+  height: 100px;
 
-main img {
-  display: flex;
-  border-radius: 15px;
-  align-items: center;
   object-fit: contain;
-  width: 400px;
 }
 
-@media (max-width: 750px) {
-  main div img {
-    object-fit: cover;
-    width: 50%;
-  }
+.checkout-link {
+  background-color: #a6e3e9;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 1rem;
 }

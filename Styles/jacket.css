@@ -15,6 +15,7 @@ button {
   border-radius: 5px;
   font-size: 1rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 @media (max-width: 750px) {
   .spesific-description {

@@ -3,7 +3,9 @@ const main = document.querySelector(".jackets-element")
 
     const products = await jackets()
     const femaleJackets = products.filter((jacket) => jacket.gender === "Female")
-
+    if(femaleJackets) {
+      main.innerHTML = ""
+    }
 
     for (let i = 0; i < femaleJackets.length; i++) {
         const jacket = femaleJackets[i];
@@ -13,7 +15,7 @@ const main = document.querySelector(".jackets-element")
         <img src=${jacket.image.url} alt=${jacket.description} />
         <div class="buyprice">
           <h3>${jacket.price} $</h3>
-          <button type="button"><a href="jacket.html?id=${jacket.id}">buy</a></button>
+          <a href="jacket.html?id=${jacket.id}">buy</a>
         </div>
       </div>
         `

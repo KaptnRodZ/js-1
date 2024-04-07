@@ -18,10 +18,15 @@
   flex-direction: row;
   gap: 1rem;
 }
-.buyprice button {
+.buyprice a {
   background-color: #a6e3e9;
   border-radius: 5px;
   padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: black;
+  border: 2px solid black;
 }
 
 @media (max-width: 1415px) {

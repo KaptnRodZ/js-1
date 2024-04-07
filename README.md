@@ -1,3 +1,3 @@
 # Rainy_Days
 
-WIP
+### NOROFF COURSE ASSIGNMENT JS-1
